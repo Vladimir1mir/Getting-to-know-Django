@@ -55,6 +55,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'netology_models_list',
+        'USER': 'postgres',
+        'PASSWORD': '1968',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -119,3 +121,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
